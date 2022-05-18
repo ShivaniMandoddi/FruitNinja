@@ -40,7 +40,7 @@ public class PrefabManager : MonoBehaviour
     public GameObject GetFruit()
     {
         int randomPrefab=Random.Range(0, prefabs.Length);
-        Debug.Log(randomPrefab + "Random Fruit");
+        //Debug.Log(randomPrefab + "Random Fruit");
         return (prefabs[randomPrefab]);
     }
 }

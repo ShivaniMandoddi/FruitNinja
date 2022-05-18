@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class CollisionwithFruit : MonoBehaviour
 {
-   
+    #region PUBLIC VARIABLES
+    public GameObject sparkeffect;
+    #endregion
+
     void Start()
     {
-        UserHandler.UserInputHandler.OnPanStartAction += DetectCollision;
+       
     }
 
     // Update is called once per frame
@@ -31,7 +34,7 @@ public class CollisionwithFruit : MonoBehaviour
         {
             Debug.Log("Fruit is collided");
             //Destroy(hitinfo.collider.gameObject, 2f);
-          
+           // Destroy(Instantiate(sparkeffect, hitinfo.collider.gameObject.transform.position,Quaternion.identity), 2f);
             hitinfo.collider.gameObject.SetActive(false);
         }
         

@@ -6,24 +6,22 @@ public class Fruit : MonoBehaviour
 {
     // Start is called before the first frame update
     private SpriteRenderer render;
-    private CircleCollider2D circlecollider2D;
+    private PolygonCollider2D collider2D;
     private Rigidbody2D rigidbody2D;
     void OnEnable()
     {
         GameObject temp = PrefabManager.Instance.GetFruit();
-        //Debug.Log(temp.GetComponent<SpriteRenderer>().sharedMaterial);
-        //Debug.Log(temp.GetComponent<SpriteRenderer>().sprite);
-        //var color = temp.GetComponent<SpriteRenderer>().sharedMaterial;
+        
         render.sprite = temp.GetComponent<SpriteRenderer>().sprite;
         render.sharedMaterial = temp.GetComponent<SpriteRenderer>().sharedMaterial;
         //Sprite newSprite = temp.GetComponent<SpriteRenderer>().sprite;
         //render.sprite = newSprite;
 
-        circlecollider2D = ((CircleCollider2D)temp.GetComponent<CircleCollider2D>());
+        collider2D = ((PolygonCollider2D)temp.GetComponent<PolygonCollider2D>());
         rigidbody2D.gravityScale = 0;
-        StartCoroutine("ForceApplying");
-       // ForceApply();
-        Debug.Log("OnEnable");
+        //StartCoroutine("ForceApplying");
+       ForceApply();
+        //Debug.Log("OnEnable");
 
     }
     void OnDisable()
@@ -34,7 +32,7 @@ public class Fruit : MonoBehaviour
     private void Awake()
     {
         render = GetComponentInChildren<SpriteRenderer>();
-        circlecollider2D = GetComponent<CircleCollider2D>();
+        collider2D = GetComponent<PolygonCollider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
 
     }
@@ -58,7 +56,7 @@ public class Fruit : MonoBehaviour
     IEnumerator ForceApplying()
     {
         
-        Debug.Log("Adding force");
+        //Debug.Log("Adding force");
         
         yield return new WaitForSeconds(2f);
         rigidbody2D.gravityScale = 1;

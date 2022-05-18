@@ -29,7 +29,7 @@ namespace UserHandler
                 {
                     startTime = Time.time;
                 }
-                if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+                else if (touch.phase == TouchPhase.Moved)
                 {
                     if (Time.time - startTime >= 0.1f)
                     {
@@ -45,14 +45,14 @@ namespace UserHandler
 
                         }
                     }
-                    else if (isGestureRecognised)
+                   /* else if (isGestureRecognised)
                     {
                         Debug.Log("Helding method");
                         if (OnPanStartAction != null)
                         {
                             OnPanStartAction(touch);
                         }
-                    }
+                    }*/
                 }
 
                 else
