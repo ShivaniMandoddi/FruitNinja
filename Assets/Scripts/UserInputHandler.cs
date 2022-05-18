@@ -35,7 +35,7 @@ namespace UserHandler
                 {
                     if (Time.time - startTime >= 0.1f)  //Enabling pangesture
                     {
-                        Debug.Log("PanGesture Enabled");
+                        //Debug.Log("PanGesture Enabled");
                         
 
                         if (!isGestureRecognised)
