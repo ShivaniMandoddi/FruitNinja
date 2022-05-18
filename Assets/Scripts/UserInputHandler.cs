@@ -14,11 +14,13 @@ namespace UserHandler
         private bool isGestureRecognised = false;
         private float startTime;
         private float maxTime = 0.4f;
+       
         #endregion
         #region MONOBEHAVIOUR METHODS
         private void Start()
         {
             startTime = Time.time;
+           
         }
         private void Update()
         {
@@ -31,9 +33,11 @@ namespace UserHandler
                 }
                 else if (touch.phase == TouchPhase.Moved)
                 {
-                    if (Time.time - startTime >= 0.1f)
+                    if (Time.time - startTime >= 0.1f)  //Enabling pangesture
                     {
                         Debug.Log("PanGesture Enabled");
+                        
+
                         if (!isGestureRecognised)
                         {
                             
@@ -45,20 +49,14 @@ namespace UserHandler
 
                         }
                     }
-                   /* else if (isGestureRecognised)
-                    {
-                        Debug.Log("Helding method");
-                        if (OnPanStartAction != null)
-                        {
-                            OnPanStartAction(touch);
-                        }
-                    }*/
+                  
                 }
 
                 else
                 {
-                    isGestureRecognised = false;
+                    isGestureRecognised = false; // Making false, to start a new pan gesture
                 }
+                
             }
         }
         #endregion
