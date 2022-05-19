@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
+    #region PUBLIC VARIABLES
+    
+    #endregion
     // Start is called before the first frame update
     #region PRIVATE VARIABLES
     private SpriteRenderer render;
     private PolygonCollider2D collider2D;
     private Rigidbody2D rigidbody2D;
+   
     #endregion
 
     #region MONOBEHAVIOUR METHODS
@@ -24,9 +28,12 @@ public class Fruit : MonoBehaviour
     void OnEnable()
     {
         GameObject temp = PrefabManager.Instance.GetFruit();    //Getting random fruit prefab from prefab manager
+        //Transform slicedfruit = temp.transform.GetChild(0).gameObject.transform;
         
         render.sprite = temp.GetComponent<SpriteRenderer>().sprite;   // Applying random fruit's sprite and collider to current object
         render.sharedMaterial = temp.GetComponent<SpriteRenderer>().sharedMaterial;
+        
+
         //Sprite newSprite = temp.GetComponent<SpriteRenderer>().sprite;
         //render.sprite = newSprite;
 

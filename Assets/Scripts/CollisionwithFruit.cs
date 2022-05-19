@@ -11,6 +11,7 @@ public class CollisionwithFruit : MonoBehaviour
     public Text scoreText;
     public Text timeText;
     public float maxTime = 30f;
+    public Slicing slicing;
     #endregion
 
     #region PRIVATE VARIABLES
@@ -60,13 +61,26 @@ public class CollisionwithFruit : MonoBehaviour
         if (hitinfo.collider != null && hitinfo.collider.gameObject.layer == Constants.FRUIT_LAYER_NUMBER) // If it hits the fruit collider, then increasing the score
         {
             // Debug.Log("Fruit is collided");
-            Destroy(Instantiate(sparkeffect, hitinfo.collider.gameObject.transform.position, Quaternion.identity), 1f);
+           // Destroy(Instantiate(sparkeffect, hitinfo.collider.gameObject.transform.position, Quaternion.identity), 1f);
             score++;
             scoreText.text = "Score: "+score.ToString();
+            //PolygonCollider2D collider2D = hitinfo.collider.gameObject.GetComponent<PolygonCollider2D>();
+            Sprite spritename=hitinfo.collider.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
+            //Debug.Log(spritename);
+            Destroy(Instantiate(slicing.GetFruit(spritename), hitinfo.collider.gameObject.transform.position, Quaternion.identity),2f);
+            //hitinfo.collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             hitinfo.collider.gameObject.SetActive(false); //Returning Back to Pool
+            //StartCoroutine("BackToPool",hitinfo.collider.gameObject);
+            
         }
 
 
+    }
+    IEnumerator BackToPool(GameObject item)
+    {
+        yield return new WaitForSeconds(1f);
+
+        
     }
     #endregion
 

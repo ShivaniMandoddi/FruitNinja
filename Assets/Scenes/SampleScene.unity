@@ -235,6 +235,7 @@ MonoBehaviour:
   scoreText: {fileID: 1975205479}
   timeText: {fileID: 11623651}
   maxTime: 30
+  slicing: {fileID: 11400000, guid: c09d38a7278f15342b087df554dd2fb6, type: 2}
 --- !u!4 &42497245
 Transform:
   m_ObjectHideFlags: 0
@@ -421,10 +422,6 @@ MonoBehaviour:
   prefabs:
   - {fileID: 2557539263001164286, guid: 97d45d40e63bd374494b834a2a6a72b6, type: 3}
   - {fileID: 8902032154865290589, guid: 05cd0005281febc4a8a08d47e9d0b958, type: 3}
-  - {fileID: 1966246656097766409, guid: d68bb5da65e10ed4bb8ed1e47f6b6f43, type: 3}
-  - {fileID: 3151889727550011720, guid: 8bf38d3503919fa4480f489ad58b9e5d, type: 3}
-  - {fileID: 8885985510682203685, guid: b5209964ce4150f4b9f626627ba45a93, type: 3}
-  - {fileID: 8270865084199626846, guid: 81baa3b73053b214d8ca03db957418be, type: 3}
 --- !u!1 &897593065
 GameObject:
   m_ObjectHideFlags: 0

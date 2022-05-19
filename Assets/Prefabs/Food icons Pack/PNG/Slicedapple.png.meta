@@ -1,49 +1,31 @@
 fileFormatVersion: 2
-guid: 871badd07384e4136b8315ccbfb65596
+guid: b5e2e99d0f10f58499b8842c6f52cfa7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6777025305268131631
-    second: bread2_0
+      213: 3389829930904558628
+    second: Slicedapple_0
   - first:
-      213: 3695372884357823331
-    second: bread2_1
+      213: 7906878117644138115
+    second: Slicedapple_1
   - first:
-      213: -9156673409095291113
-    second: bread2_2
+      213: -8540584515514082123
+    second: Slicedapple_2
   - first:
-      213: -2274010497393450743
-    second: bread2_3
+      213: 533452147208416314
+    second: Slicedapple_3
   - first:
-      213: -2251506319193075009
-    second: bread2_4
+      213: 9130992031894240978
+    second: Slicedapple_4
   - first:
-      213: 3177497538767036375
-    second: bread2_5
+      213: -2171846547276570078
+    second: Slicedapple_5
   - first:
-      213: 7086614426009511210
-    second: bread2_6
+      213: -5800495253276477313
+    second: Slicedapple_6
   - first:
-      213: 1237787216090343408
-    second: bread2_7
-  - first:
-      213: -3714491350643370575
-    second: bread2_8
-  - first:
-      213: -7969437927648521332
-    second: bread2_9
-  - first:
-      213: -8958790874406288172
-    second: bread2_10
-  - first:
-      213: -2829536009347204340
-    second: bread2_11
-  - first:
-      213: -9098118737348499726
-    second: bread2_12
-  - first:
-      213: 7084797370505413525
-    second: bread2_13
+      213: -5160061575317095287
+    second: Slicedapple_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bread2_0
+      name: Slicedapple_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 33
-        width: 245
-        height: 188
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d8e8ad146b23f1a0800000000000000
-      internalID: -6777025305268131631
+      spriteID: 42c9d80bc581b0f20800000000000000
+      internalID: 3389829930904558628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slicedapple_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386fc7c61cfdabd60800000000000000
+      internalID: 7906878117644138115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slicedapple_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcd49212afb97980800000000000000
+      internalID: -8540584515514082123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slicedapple_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ce60bc6e3376700800000000000000
+      internalID: 533452147208416314
       vertices: []
       indices: 
       edges: []

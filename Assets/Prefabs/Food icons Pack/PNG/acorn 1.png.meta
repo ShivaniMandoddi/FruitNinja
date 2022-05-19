@@ -1,49 +1,52 @@
 fileFormatVersion: 2
-guid: 871badd07384e4136b8315ccbfb65596
+guid: a000dc2820d372c428a342c908835b49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6777025305268131631
-    second: bread2_0
+      213: 2408367101656739230
+    second: acorn 1_0
   - first:
-      213: 3695372884357823331
-    second: bread2_1
+      213: -4929149434709992092
+    second: acorn 1_1
   - first:
-      213: -9156673409095291113
-    second: bread2_2
+      213: -420186020736240582
+    second: acorn 1_2
   - first:
-      213: -2274010497393450743
-    second: bread2_3
+      213: -1800666049524869779
+    second: acorn 1_3
   - first:
-      213: -2251506319193075009
-    second: bread2_4
+      213: -7201806868479969581
+    second: acorn 1_4
   - first:
-      213: 3177497538767036375
-    second: bread2_5
+      213: 1052087325487249413
+    second: acorn 1_5
   - first:
-      213: 7086614426009511210
-    second: bread2_6
+      213: 2487588314268876938
+    second: acorn 1_6
   - first:
-      213: 1237787216090343408
-    second: bread2_7
+      213: -13259584948842076
+    second: acorn 1_7
   - first:
-      213: -3714491350643370575
-    second: bread2_8
+      213: 8437040478570148394
+    second: acorn 1_8
   - first:
-      213: -7969437927648521332
-    second: bread2_9
+      213: -7165180803118606113
+    second: acorn 1_9
   - first:
-      213: -8958790874406288172
-    second: bread2_10
+      213: 236251038435323349
+    second: acorn 1_10
   - first:
-      213: -2829536009347204340
-    second: bread2_11
+      213: 8633006483067590415
+    second: acorn 1_11
   - first:
-      213: -9098118737348499726
-    second: bread2_12
+      213: -1590154503778015726
+    second: acorn 1_12
   - first:
-      213: 7084797370505413525
-    second: bread2_13
+      213: 3268631557401403382
+    second: acorn 1_13
+  - first:
+      213: 8273251828860536298
+    second: acorn 1_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,13 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bread2_0
+      name: acorn 1_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 33
-        width: 245
-        height: 188
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +174,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d8e8ad146b23f1a0800000000000000
-      internalID: -6777025305268131631
+      spriteID: e9dacfe6e1d3c6120800000000000000
+      internalID: 2408367101656739230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: acorn 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d1b4374b4289bb0800000000000000
+      internalID: -4929149434709992092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: acorn 1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a347e665a033b2af0800000000000000
+      internalID: -420186020736240582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: acorn 1_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65d6fea4cfb207e0800000000000000
+      internalID: -1800666049524869779
       vertices: []
       indices: 
       edges: []

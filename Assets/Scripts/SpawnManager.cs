@@ -35,6 +35,7 @@ public class SpawnManager : MonoBehaviour
         Vector2 worldScreenResolution=Camera.main.ScreenToWorldPoint(screenresolution); // Changing to world coordinates
         
         fruit.transform.position = new Vector2(Random.Range(-worldScreenResolution.x, worldScreenResolution.x), -worldScreenResolution.y - 1); // Random position is assigned to fruit based on screen resolution
+
        
         
         
