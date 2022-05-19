@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CollisionwithFruit : MonoBehaviour
 {
     #region PUBLIC VARIABLES
-    //public GameObject sparkeffect;
+    public GameObject sparkeffect;
     public Text scoreText;
     public Text timeText;
     public float maxTime = 30f;
@@ -59,7 +59,8 @@ public class CollisionwithFruit : MonoBehaviour
         RaycastHit2D hitinfo = Physics2D.Raycast(worldtouchPosition, Vector3.forward); // Passing a ray from touch position
         if (hitinfo.collider != null && hitinfo.collider.gameObject.layer == Constants.FRUIT_LAYER_NUMBER) // If it hits the fruit collider, then increasing the score
         {
-           // Debug.Log("Fruit is collided");
+            // Debug.Log("Fruit is collided");
+            Destroy(Instantiate(sparkeffect, hitinfo.collider.gameObject.transform.position, Quaternion.identity), 1f);
             score++;
             scoreText.text = "Score: "+score.ToString();
             hitinfo.collider.gameObject.SetActive(false); //Returning Back to Pool
